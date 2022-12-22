@@ -1,0 +1,10 @@
+{% extends 'template_app/base.html' %}
+ 
+{% block content %}
+        <h1>WELCOME TO HOME!</h1>
+        <a href="{% url 'template_app:other' %}">OTHER PAGE</a>
+        <a href="{% url 'admin:index' %}">LINK TO ADMIN PAGE</a>
+        <h2>This is an Example of Template Inheritence</h2>
+        {{ name|cut:'world' }}
+        {{ number|add:40 }}
+{% endblock %}
